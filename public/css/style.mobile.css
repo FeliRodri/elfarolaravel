@@ -1,0 +1,370 @@
+@font-face {
+
+    font-family: Raleway-Bold;
+    src: url('fonts/Raleway-Bold.ttf')
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url("fonts/Raleway-Regular.ttf")
+}
+
+@font-face {
+    font-family: Raleway-Italic;
+    src: url("fonts/Raleway-Italic.ttf")
+}
+
+@font-face {
+    font-family: Libre-Franklin-Thin;
+    src: url("fonts/LibreFranklin-Thin.ttf")
+}
+
+@font-face {
+    font-family: Libre-Franklin-Bold;
+    src: url("fonts/LibreFranklin-Bold.ttf")
+}
+
+@font-face {
+    font-family: Libre-Franklin-Regular;
+    src: url("fonts/LibreFranklin-Regular.ttf");
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.container {
+    display: none;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+
+header .top-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 55px;
+    background: white;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    position: fixed;
+    left: 0%;
+    top: 0;
+    z-index: 1;
+}
+
+/*header .top-buttons nav {
+    display: none;
+}
+*/
+
+
+header figure img {
+    max-width: 120px;
+    display: flex;
+}
+
+header .top-buttons i {
+    font-size: 20px;
+    margin: 0 18px;
+    align-self: center;
+
+}
+
+
+header .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+header .logo img {
+    width: 350px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .today-date {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+header .today-date .line {
+
+    width: 100%;
+    border-bottom: 1px solid grey;
+
+}
+
+header .today-date .clock {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+
+    font-family: Raleway-Italic, sans-serif;
+    color: rgb(19, 18, 18);
+    text-align: center;
+    position: absolute;
+
+
+
+}
+
+header .today-date .time {
+    flex-shrink: 1;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+header .today-date .fecha {
+    flex-shrink: 1;
+    letter-spacing: 0.1em;
+    font-size: 14px;
+}
+
+
+
+/*news-feed */
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#news-feed-mobile {
+    display: block;
+    margin-top: 100px;
+    width: 100%;
+}
+
+#news-feed .row {
+    display: flex;
+    width: 100%;
+}
+
+#news-feed .row .left-col {
+    width: 64%;
+    padding-right: 1%;
+
+}
+
+#news-feed .row .right-col {
+    width: 34%;
+    padding-left: 1%;
+
+}
+
+#news-feed-mobile .video {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#news-feed-mobile article {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    padding-right: 0 3% 0 0;
+    height: 100%;
+}
+
+#news-feed .row .left-col article {
+    height: 90%;
+}
+
+#news-feed .row .right-col article {
+    height: 50%;
+
+}
+
+#news-feed-mobile h1 {
+    margin: 25px 0 20px 0;
+    font-family: Libre-Franklin-Bold, sans-serif;
+    font-size: 22px;
+    color: black;
+}
+
+#news-feed-mobile h2 {
+    color: black;
+    font-family: Libre-Franklin-Bold, sans-serif;
+    font-size: 21px;
+}
+
+#news-feed h3 {
+    color: black;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+}
+
+#news-feed-mobile p {
+    font-size: 20px;
+    font-family: Libre-Franklin-Thin, sans-serif;
+    color: grey;
+}
+
+#news-feed-mobile figure {
+    position: relative;
+    margin: 0;
+}
+
+#news-feed-mobile figure img {
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+}
+
+#news-feed-mobile figure figcaption {
+    width: auto;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: Libre-Franklin-Bold, sans-serif;
+    background: rgb(0, 0, 0, 0.6);
+
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+
+
+}
+
+#news-feed-mobile figure figcaption span {
+    color: white;
+}
+
+#news-feed-mobile .abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-items: center;
+    min-height: 10vh;
+
+}
+
+#news-feed-mobile .form {
+    width: 450px;
+}
+
+input[type="text"] {
+    outline: none;
+    padding: 20px;
+    display: block;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    margin: 20px auto;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background: transparent;
+    height: auto;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+footer .topbar {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    position: relative;
+}
+
+footer .topbar img {
+    width: 100px;
+}
+
+footer .topbar .socialnetwork {
+    display: none;
+
+}
+
+footer .topbar .socialnetwork a {
+    text-decoration: none;
+}
+
+
+footer .sitemap {
+    display: none;
+    width: 100%;
+}
+
+footer .sitemap-mobile .col {
+    width: 50%;
+}
+
+footer .sitemap-mobile ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer .sitemap-mobile ul li {
+    font-family: Libre-Franklin-Regular, sans-serif;
+    font-size: 15px;
+    margin: 0 0 25px;
+}
+
+footer .sitemap-mobile ul li span {
+    color: black;
+    font-family: Libre-Franklin-Bold, sans-serif;
+}
+
+footer .sitemap-mobile ul li a {
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-family: Libre-Franklin-Regular, sans-serif;
+    font-size: 14px;
+    color: rgb(60, 60, 60);
+}
+
+footer .socialnetwork-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+footer .socialnetwork-mobile i {
+    color: rgb(60, 60, 60);
+    margin-right: 12px;
+    font-size: 22px;
+}
